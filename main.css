@@ -1,0 +1,515 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* @-webkit-keyframes backgroundColors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundColors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes backgroundColors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+} */
+
+/* body {
+  background: linear-gradient(270deg, rgba(160, 92, 197, 0.8), rgba(65, 184, 157, 0.8));
+  background-size: 200% 200%;
+  animation: backgroundColors 24s ease infinite;
+} */
+/*
+@keyframes flash {
+  to {
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 90px #fff;
+  }
+} */
+
+a {
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  color: #D90866;
+  text-transform: uppercase;
+}
+
+.home-nav{
+  height: 100vh;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.index-header {
+  text-decoration: none;
+  height: 20vh;
+  font-family: 'Poiret One', cursive;
+  /* font-weight: bold; */
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  color: #629C85;
+  text-transform: uppercase;
+  /* text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff; */
+  /* animation: flash 1.4s alternate infinite;
+  animation-play-state: running; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40vh 0vw;
+}
+
+.index-header:hover {
+  text-shadow:
+    0 0 5px #629C85,
+    0 0 10px #629C85
+    /* 0 0 20px #D90866
+    0 0 40px #D90866 */
+    /* 0 0 80px #D90866,
+    0 0 90px #D90866,
+    0 0 100px #D90866,
+    0 0 150px #D90866; */
+}
+
+.contact-body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-header-name {
+  width: 100vw;
+  text-decoration: none;
+  height: 20vh;
+  font-family: 'Poiret One', cursive;
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  color: #D90866;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-divs {
+  width: 20vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact-icons {
+  height: 6vh;
+  width: 4vw;
+}
+
+/* --- BIRD 1 --- */
+
+@keyframes bird1 {
+  0% {
+    transform: translate(0, 60vh);
+  }
+  100% {
+    transform: translate(-110vw, -40vh);
+  }
+}
+
+.bird1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird1 9s infinite linear;
+  width: 100px;
+  height: 100px;
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+.right-wing{
+  content: "";
+  display: block;
+  width: 44px;
+  height: 34px;
+  position: absolute;
+  left: 42px;
+  top: 37px;
+  transform-origin: left;
+  background-color: #D90866;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: wings;
+  -moz-animation-name: wings;
+  -o-animation-name: wings;
+  animation-name: wings;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.left-wing {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 23px;
+  transform: skewX(-396deg) rotateZ(268deg) rotateY(100deg);
+  position: absolute;
+  left: 35px;
+  top: 30px;
+  transform-origin: left;
+  background-color: #D90866;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: wings;
+  -moz-animation-name: wings;
+  -o-animation-name: wings;
+  animation-name: wings;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: -2;
+}
+
+@-webkit-keyframes wings {
+  from {
+    -webkit-transform: skewX(-35deg) rotateZ(268deg) rotateY(0deg);
+    -moz-transform: skewX(-35deg) rotateZ(268deg) rotateY(0deg);
+    -ms-transform: skewX(-35deg) rotateZ(268deg) rotateY(0deg);
+    -o-transform: skewX(-35deg) rotateZ(268deg) rotateY(0deg);
+    transform: skewX(-35deg) rotateZ(268deg) rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: skewX(-35deg) rotateZ(268deg) rotateY(130deg);
+    -moz-transform: skewX(-35deg) rotateZ(268deg) rotateY(130deg);
+    -ms-transform: skewX(-35deg) rotateZ(268deg) rotateY(130deg);
+    -o-transform: skewX(-35deg) rotateZ(268deg) rotateY(130deg);
+    transform: skewX(-35deg) rotateZ(268deg) rotateY(130deg);
+  }
+}
+
+/* --- BIRD 2 ---*/
+
+@keyframes bird2 {
+  0% {
+    transform: translate(0, 60vh);
+  }
+  100% {
+    transform: translate(-110vw, -40vh);
+  }
+}
+
+.bird2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird2 9s infinite linear;
+  animation-delay: -3s;
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 3 --- */
+
+@keyframes bird3 {
+  0% {
+    transform: translate(0, 60vh);
+  }
+  100% {
+    transform: translate(-110vw, -40vh);
+  }
+}
+
+.bird3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird3 9s infinite linear;
+  animation-delay: -6s;
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 4 --- */
+
+@keyframes bird4 {
+  0% {
+    transform: translate(30vw, 20vh);
+  }
+  100% {
+    transform: translate(-62vw, -35vh);
+  }
+}
+
+.bird4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird4 7s infinite linear;
+  /* animation-delay: -6s; */
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 5 --- */
+
+@keyframes bird5 {
+  0% {
+    transform: translate(30vw, 20vh);
+  }
+  100% {
+    transform: translate(-62vw, -35vh);
+  }
+}
+
+.bird5 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird5 7s infinite linear;
+  animation-delay: -3.5s;
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 6 --- */
+
+@keyframes bird6 {
+  0% {
+    transform: translate(-30vw, 80vh);
+  }
+  100% {
+    transform: translate(-130vw, 0vh);
+  }
+}
+
+.bird6 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird6 9s infinite linear;
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 7 --- */
+
+@keyframes bird7 {
+  0% {
+    transform: translate(-30vw, 80vh);
+  }
+  100% {
+    transform: translate(-130vw, 0vh);
+  }
+}
+
+.bird7 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird7 9s infinite linear;
+  animation-delay: -3s;
+  width: 100px;
+  height: 100px;
+  /* opacity: 0.4; */
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+/* --- BIRD 8 --- */
+
+@keyframes bird8 {
+  0% {
+    transform: translate(-30vw, 80vh);
+  }
+  100% {
+    transform: translate(-130vw, 0vh);
+  }
+}
+
+.bird8 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  left: 100vw;
+  top: 20vh;
+  height: 30vh;
+  width: 30vw;
+  animation: bird8 9s infinite linear;
+  animation-delay: -6s;
+  width: 100px;
+  height: 100px;
+  background: url("bird.png") bottom/100% no-repeat;
+  position: absolute;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
