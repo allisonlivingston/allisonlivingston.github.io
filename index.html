@@ -1,63 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Personal Site</title>
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   </head>
   <body>
-    <header>
-      <a href="" class="index-header">Allison Livingston</a>
+    <header id="navigation">
+      <a class="initials nav-link" href="index.html">AL</a>
+      <nav>
+        <a class="nav-link" href="#aboutme">About Me</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
     </header>
-    <main class="home-main">
-      <div class=bird-holder>
-        <div class="bird1">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
+    <!-- LANDING PAGE SECTION -->
+    <section class="title-section">
+      <h1 class="name">Allison Livingston</h1>
+      <h3 class="professional-title">Full Stack Web Developer</h3>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section id="aboutme" class="aboutme-section">
+      <h2 class="aboutme-h2">About Me</h2>
+      <div class="aboutme-content">
+        <div>
+          <img class="image-sizing myImages w3-animate-fading" src="images/professionalpicture.jpg" alt="professional-shot">
+          <img class="image-sizing myImages w3-animate-fading" src="images/G77-Cohort-Graduation.jpg" alt="g77 graduation">
+          <img class="image-sizing myImages w3-animate-fading" src="images/Brainard-Lake-Hike.jpg" alt="hiking">
         </div>
-        <div class="bird2">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
+        <p class="aboutme-p">Hello! My name is Allison Livingston and I am a recent graduate from Galvanize's Web Development Immersive program in Denver. I grew up in San Diego, went to college in upstate New York, and lived in Maryland for about 5 years prior to moving to Denver. I spent the last 3.5 years traveling throughout the United States as a Quality Auditor in the construction industry, which gave me the opportunity to explore tons of new cities and national parks. Aside from traveling, I enjoy hiking, trying new breweries, seeing movies, and hanging out with my cats, Chloe and Emma.</p>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <h2>Skills</h2>
+      <div class="icon-div">
+        <i class="devicon-html5-plain-wordmark"></i>
+        <i class="devicon-css3-plain-wordmark"></i>
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-react-original-wordmark"></i>
+        <i class="devicon-express-original"></i>
+        <i class="devicon-heroku-original-wordmark"></i>
+        <i class="devicon-nodejs-plain-wordmark"></i>
+        <i class="devicon-postgresql-plain"></i>
+      </div>
+    </section>
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="project-section">
+      <h2>Projects</h2>
+      <div class="all-projects-div">
+        <div class="individual-project-div">
+          <h3 class="project-names">Gear Up</h3>
+          <a href="https://denver-gear-up.firebaseapp.com/" target="_blank"><img class="project-cards" src="images/GearUp.png" alt="gearup"></a>
+          <p class="tech-used">ReactJS, Semantic UI React, HTML, CSS, Express, Knex, PostgreSQL, Cypress, Firebase Authentication, Heroku</p>
         </div>
-        <div class="bird3">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
+        <div class="individual-project-div">
+          <h3 class="project-names">My Library</h3>
+          <a href="https://my-library-tracker.firebaseapp.com/" target="_blank"><img class="project-cards" src="images/My-Library.png" alt="library"></a>
+          <p class="tech-used">ReactJS, HTML, CSS, Firebase, Cypress, Express, Knex, PostgreSQL, Heroku</p>
         </div>
-        <div class="bird4">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
-        </div>
-        <div class="bird5">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
-        </div>
-        <div class="bird6">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
-        </div>
-        <div class="bird7">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
-        </div>
-        <div class="bird8">
-          <div class="left-wing"></div>
-          <div class="right-wing"></div>
+        <div class="individual-project-div">
+          <h3 class="project-names">Bike Share</h3>
+          <a href="https://project-2-bike-share.firebaseapp.com/" target="_blank"><img class="project-cards" src="images/Bike-Share-App.png" alt="bike share"></a>
+          <p class="tech-used">JavaScript, HTML, CSS, Cypress, Firebase</p>
         </div>
       </div>
-    </main>
-    <nav class="home-nav">
-      <a href="">About Me</a>
-      <a id="myImg">Resume</a>
-      <a href="">Portfolio</a>
-      <a href="">Contact Me</a>
-    </nav>
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01" src="Resume-Allison-Livingston.png">
-      <div id="caption"></div>
-    </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>Plese send me a message and I'll get to you as soon as possible!</p>
+      <form class="contact-form" method="POST" action="https://formspree.io/allisonlivingston16@gmail.com">
+        <div class="form-div">
+          <label>Email</label>
+          <input class="form-email" type="email" name="email" placeholder="Your email">
+        </div>
+        <div class="form-div">
+          <label>Message</label>
+          <textarea class="form-message" name="message" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+      <!-- <div id="container">
+        <div id="glass">
+          <div id="wall"></div>
+          <div id="crema"></div>
+          <div id="coffee"></div>
+        </div>
+      </div> -->
+    </section>
+    <!-- FOOTER -->
+    <footer>&copy; 2018 Allison Livingston </footer>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

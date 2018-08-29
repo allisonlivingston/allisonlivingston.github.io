@@ -2,30 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Personal Site</title>
+    <title></title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   </head>
-  <body class="contact-body">
-    <header class="contact-header">
-      <a href="./index.html" class="contact-header-name">Allison Livingston</a>
-      <nav class="contact-nav">
-        <div class="contact-divs">
-          <img src="./Images/email.png" alt="email" class="contact-icons">
-          <a href="">Email</a>
-        </div>
-        <div class="contact-divs">
-          <img src="./Images/github.png" alt="" class="contact-icons">
-          <a href="">GitHub</a>
-        </div>
-        <div class="contact-divs">
-          <img src="./Images/linkedin.png" alt="" class="contact-icons">
-          <a href="">LinkedIn</a>
-        </div>
+  <body>
+    <header>
+      <a class="initials" href="index.html">AL</a>
+      <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
-    <!-- <main>
-
-    </main> -->
+    <section class="contact-section">
+      <div id="container">
+        <div id="glass">
+          <div id="wall"></div>
+          <div id="crema"></div>
+          <div id="coffee"></div>
+        </div>
+      </div>
+      <p>Plese send me a message and I'll get to you as soon as possible!</p>
+      <form class="contact-form" method="POST" action="https://formspree.io/allisonlivingston16@gmail.com">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>&copy; 2018</footer>
   </body>
 </html>
