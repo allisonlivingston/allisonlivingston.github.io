@@ -245,6 +245,21 @@ i {
 .form-button {
   width: 150px;
 }
+
+.contact-links {
+  width: 340px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 0vw;
+}
+
+.contact-icon {
+  font-size: 4vw;
+}
+
+.contact-icon:hover {
+  color: rgba(153, 141, 160, 0.5);
+}
 /* -- COFFEE -- */
 
 #container {
