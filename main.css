@@ -26,7 +26,7 @@ body {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: 1px;
   color: #6A6A6A;
 }
@@ -157,6 +157,7 @@ i {
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  margin-top: 5vh;
 }
 
 /* -- PROJECTS -- */
@@ -177,6 +178,7 @@ i {
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  margin-top: 5vh;
 }
 
 .individual-project-div {
@@ -216,6 +218,13 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.contact-section-p {
+  margin-top: 5vh;
+  font-size: 18px;
+  text-align: center;
 }
 
 .contact-form {
@@ -247,14 +256,15 @@ i {
 }
 
 .contact-links {
-  width: 340px;
+  width: 360px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2vh 0vw;
+  margin-top: 3vh;
 }
 
 .contact-icon {
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .contact-icon:hover {
@@ -411,5 +421,16 @@ footer {
   }
   .image-sizing {
     width: 55vw;
+  }
+}
+
+/* MEDIA CONTACT SECTION */
+
+@media only screen and (max-width: 750px) {
+  .contact-section-p {
+    padding: 0vh 8vw;
+  }
+  .contact-icon {
+    font-size: 10vw;
   }
 }
