@@ -1,0 +1,148 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 18.75em;
+  width: 26.25em;
+  position: relative;
+}
+.plant-1 {
+  position: absolute;
+  background-image: radial-gradient(#0e4d66 0.18em, transparent 0.18em),
+    radial-gradient(#0e4d66 0.18em, #feffff 0.18em);
+  background-size: 2.5em 2.5em;
+  background-position: 0 -0.62em, 1.25em 0.62em;
+  height: 7.5em;
+  width: 5.6em;
+  border-radius: 1.25em 1.25em 0 0;
+  bottom: 1.87em;
+  left: 1.25em;
+}
+.plant-1:before {
+  position: absolute;
+  content: "";
+  background-color: #feffff;
+  width: 4.37em;
+  height: 0.75em;
+  left: 0.62em;
+  top: -0.62em;
+}
+.succulent-1 {
+  position: absolute;
+  background-color: #1bb68a;
+  height: 4.37em;
+  width: 2.18em;
+  left: 0.62em;
+  top: -5em;
+  border-radius: 1.87em 1.87em 0 0;
+}
+.succulent-1:before {
+  position: absolute;
+  content: "";
+  background-color: #139b66;
+  height: 3.12em;
+  width: 2.18em;
+  top: 1.25em;
+  left: 2.18em;
+  border-radius: 1.87em 1.87em 0 0;
+}
+.plant-2 {
+  position: absolute;
+  height: 5.62em;
+  width: 5.62em;
+  background: linear-gradient(
+    #cc942c 60%,
+    #ffffff 60%,
+    #ffffff 80%,
+    #0d4d65 80%
+  );
+  bottom: 1.87em;
+  left: 10em;
+}
+.succulent-2 {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #138b66;
+  border-radius: 2.5em 0;
+  top: -2.18em;
+  left: 2.5em;
+  transform: rotate(10deg);
+}
+.succulent-2:before {
+  content: "";
+  position: absolute;
+  height: 3.75em;
+  width: 3.75em;
+  background-color: #1bb68a;
+  border-radius: 3.75em 0;
+  bottom: 0.75em;
+  left: -2em;
+  transform: rotate(-50deg);
+}
+.plant-3 {
+  position: absolute;
+  height: 3.12em;
+  width: 5.62em;
+  background-image: linear-gradient(0deg, #feffff 50%, #0e4d66 50%);
+  background-size: 0.87em 1.25em;
+  bottom: 1.87em;
+  left: 18.75em;
+}
+.succulent-4 {
+  position: absolute;
+  height: 0;
+  width: 5.31em;
+  border-top: 2.18em solid #1bb68a;
+  border-left: 0.93em solid transparent;
+  border-right: 0.93em solid transparent;
+  bottom: 3.12em;
+  left: 0.31em;
+}
+.succulent-4:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 2.18em solid #138b66;
+  border-left: 0.93em solid transparent;
+  border-right: 0.93em solid transparent;
+  bottom: 2.2em;
+  left: 0.75em;
+}
+.succulent-3:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 2.18em solid #139b66;
+  border-left: 0.93em solid transparent;
+  border-right: 0.93em solid transparent;
+  bottom: 4.68em;
+  left: 3.12em;
+  transform: rotate(25deg);
+}
+.succulent-3:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 2.18em solid #139b66;
+  border-left: 0.93em solid transparent;
+  border-right: 0.93em solid transparent;
+  bottom: 4.68em;
+  right: 2.62em;
+  transform: rotate(-25deg);
+}
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 1.5em;
+  }
+}
