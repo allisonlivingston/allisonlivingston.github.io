@@ -4,14 +4,23 @@
   "private": true,
   "homepage": "https://allisonlivingston.github.io/",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/archivo-narrow": "^5.1.0",
+    "@fontsource/crimson-text": "^5.1.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.4.5",
     "latest": "^0.2.0",
     "n": "^9.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "typeface-julius-sans-one": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.14"
   }
 }

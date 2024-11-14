@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  flex: 1;
   flex-direction: column;
   text-align: center;
 }
@@ -7,7 +8,35 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: black
 }
+
+#gradient {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(69, 204, 137), rgb(227, 122, 224));
+  clip-path: polygon(0 0, 90% 0, 10% 100%, 0% 100%);
+  transform: rotate(180deg);
+}
+
+.skillIcon {
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .skillIcon {
+    width: 85px;
+    height: 85px;
+  }
+}
+
 .container {
   height: 18.75em;
   width: 26.25em;
@@ -15,8 +44,8 @@
 }
 .plant-1 {
   position: absolute;
-  background-image: radial-gradient(#0e4d66 0.18em, transparent 0.18em),
-    radial-gradient(#0e4d66 0.18em, #feffff 0.18em);
+  background-image: radial-gradient(#AF858B 0.18em, transparent 0.18em),
+    radial-gradient(#AF858B 0.18em, #feffff 0.18em);
   background-size: 2.5em 2.5em;
   background-position: 0 -0.62em, 1.25em 0.62em;
   height: 7.5em;
@@ -24,6 +53,7 @@
   border-radius: 1.25em 1.25em 0 0;
   bottom: 1.87em;
   left: 1.25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .plant-1:before {
   position: absolute;
@@ -36,7 +66,7 @@
 }
 .succulent-1 {
   position: absolute;
-  background-color: #1bb68a;
+  background-color: #929865;
   height: 4.37em;
   width: 2.18em;
   left: 0.62em;
@@ -58,19 +88,20 @@
   height: 5.62em;
   width: 5.62em;
   background: linear-gradient(
-    #cc942c 60%,
+    #d68c45 60%,
     #ffffff 60%,
     #ffffff 80%,
-    #0d4d65 80%
+    #ffc9b9 80%
   );
   bottom: 1.87em;
   left: 10em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .succulent-2 {
   position: absolute;
   height: 2.5em;
   width: 2.5em;
-  background-color: #138b66;
+  background-color: #545C4C;
   border-radius: 2.5em 0;
   top: -2.18em;
   left: 2.5em;
@@ -81,7 +112,7 @@
   position: absolute;
   height: 3.75em;
   width: 3.75em;
-  background-color: #1bb68a;
+  background-color: #929865;
   border-radius: 3.75em 0;
   bottom: 0.75em;
   left: -2em;
@@ -90,31 +121,33 @@
 .plant-3 {
   position: absolute;
   height: 3.12em;
-  width: 5.62em;
-  background-image: linear-gradient(0deg, #feffff 50%, #0e4d66 50%);
+  width: 5em;
+  background-image: linear-gradient(0deg, #feffff 50%, #5D9595 50%);
   background-size: 0.87em 1.25em;
   bottom: 1.87em;
   left: 18.75em;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .succulent-4 {
   position: absolute;
   height: 0;
-  width: 5.31em;
-  border-top: 2.18em solid #1bb68a;
+  width: 5em;
+  border-top: 2.18em solid #929865;
   border-left: 0.93em solid transparent;
   border-right: 0.93em solid transparent;
   bottom: 3.12em;
-  left: 0.31em;
 }
 .succulent-4:before {
   position: absolute;
   content: "";
   height: 0;
   width: 0;
-  border-bottom: 2.18em solid #138b66;
+  border-bottom: 2.18em solid #545C4C;
   border-left: 0.93em solid transparent;
   border-right: 0.93em solid transparent;
-  bottom: 2.2em;
+  bottom: 2.1em;
   left: 0.75em;
 }
 .succulent-3:before {
@@ -146,3 +179,27 @@
     font-size: 1.5em;
   }
 }
+
+/* -- PROJECT PAGE -- */
+
+.project-placeholder {
+  height: 20vh;
+  width: 20vw;
+  background-color: red;
+  border: solid;
+}
+
+.tech-used {
+  display: none;
+  margin-top: 2em;
+}
+
+.project-cards:hover {
+  box-shadow: 1px 1px 20px 3px #6A6A6A;
+}
+
+.project-cards-img {
+  width: 100%;
+  border-radius: 5px;
+}
+

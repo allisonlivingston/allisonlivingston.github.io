@@ -11,7 +11,7 @@ const Nav = () => {
             <div style={styles.flexRow}>
                 { titles.map((title, i) => {
                     return (
-                        <a key={`nav-${title}`} style={{ ...styles.h2, ...styles.navItem }} href={`#${links[i]}`}>{title}</a>
+                        <a key={`nav-${title}`} style={{ ...styles.navItem }} href={`#${links[i]}`}>{title}</a>
                     )
                 })}
             </div>
@@ -20,15 +20,13 @@ const Nav = () => {
 }
 
 let styles = {
-    h2: {
-        color: "blue"
-    },
     navWrapper: {
         justifyContent: "space-between",
         width: "100%",
         position: "fixed",
         top: 0,
-        zIndex: 1
+        zIndex: 1,
+        borderBottom: "solid 2px black"
     },
     navItem: {
         margin: 50,
