@@ -4,8 +4,8 @@ import Logo from "../images/SkillsIcons/logo.svg";
 const Landing = () => {
     return(
         <div id="home" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100vh", width: "100%", fontFamily: 'Julius Sans One', backgroundColor: "transparent", position: "relative" }}>
-            <h1 className="text-5xl sm:text-7xl" style={{ backgroundColor: "transparent", fontWeight: "normal" }}>Allison Livingston</h1>
-            <h3 className="text-xl sm:text-2xl pt-4 tracking-wider sm:tracking-widest" style={{ backgroundColor: "transparent", fontFamily: "Archivo Narrow", fontWeight: "normal" }}>Front End Developer</h3>
+            <h1 className="text-5xl sm:text-7xl font-bold sm:font-normal" style={{ backgroundColor: "transparent" }}>Allison Livingston</h1>
+            <h3 className="text-xl sm:text-2xl pt-4 tracking-widest font-bold sm:font-normal" style={{ backgroundColor: "transparent", fontFamily: "Archivo Narrow" }}>Front End Developer</h3>
         </div>
         // <div id="home"></div>
             

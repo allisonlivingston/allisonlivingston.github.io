@@ -13,7 +13,7 @@ const Footer = () => {
                     <img width={50} src={GithubIcon} />
                 </a>
             </div>
-            <h4 className="font-medium tracking-wider text-base" style={{ fontFamily: "Archivo Narrow" }}>&copy;2024 Allison Livingston</h4>
+            <h4 className="font-medium tracking-widest text-base font-extrabold" style={{ fontFamily: "Archivo Narrow" }}>&copy;2024 Allison Livingston</h4>
         </div>
     )
 }
