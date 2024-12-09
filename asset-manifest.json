@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a107cae.css",
+    "main.css": "/static/css/main.f9cb8b8b.css",
     "main.js": "/static/js/main.4758d477.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Bike-Share-App.png": "/static/media/Bike-Share-App.2b227b621768e97ee7e6.png",
@@ -58,12 +58,12 @@
     "static/media/muiicon.svg": "/static/media/muiicon.b7a229f630243f729a8f2366666199a3.svg",
     "static/media/npmicon.svg": "/static/media/npmicon.5a2b4482be456427dcf574105ddfc058.svg",
     "static/media/axiosicon.svg": "/static/media/axiosicon.59e65910cd91434b5b5ba3e3466513f2.svg",
-    "main.3a107cae.css.map": "/static/css/main.3a107cae.css.map",
+    "main.f9cb8b8b.css.map": "/static/css/main.f9cb8b8b.css.map",
     "main.4758d477.js.map": "/static/js/main.4758d477.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a107cae.css",
+    "static/css/main.f9cb8b8b.css",
     "static/js/main.4758d477.js"
   ]
 }
