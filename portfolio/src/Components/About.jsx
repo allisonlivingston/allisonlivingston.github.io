@@ -12,7 +12,7 @@ const About = ({ setIsModalVisible }) => {
 
     return(
         <div id="about" style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", backgroundColor: "transparent" }}>
-            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-bold sm:font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One' }}>
+            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One', textShadow: "1px 1px black" }}>
                 About
             </h1>
             <div className="flex w-full flex-col md:flex-row justify-start">

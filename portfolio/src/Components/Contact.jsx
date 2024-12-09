@@ -69,7 +69,7 @@ const Contact = ({ setIsLoading, setIsModalVisible }) => {
 
     return(
         <div id="contact" style={{ ...styles.flexFullWidth, flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", backgroundColor: "transparent" }}>
-            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-bold sm:font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One' }}>
+            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One', textShadow: "1px 1px black" }}>
                 Contact
             </h1>
             <div className="w-full flex flex-col items-center">

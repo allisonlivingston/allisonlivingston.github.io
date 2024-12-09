@@ -35,7 +35,7 @@ const Projects = ({ handleSelectedProject }) => {
 
     return(
         <div id="projects" style={{ display: "flex", flexDirection: "column", width:"100%", position: "relative", backgroundColor: "transparent", alignItems: "center" }}>
-            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-bold sm:font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One' }}>
+            <h1 className="text-4xl sm:text-5xl mb-6 sm:mb-8 font-normal" style={{ marginTop: "150px", fontFamily: 'Julius Sans One', textShadow: "1px 1px black" }}>
                 Projects
             </h1>
             <div className="w-10/12 flex flex-col sm:flex-row items-center justify-center flex-wrap">
