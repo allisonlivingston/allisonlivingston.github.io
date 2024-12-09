@@ -57,7 +57,7 @@ const SkillsModal = ({ setIsModalVisible }) => {
                             <CloseIcon className="absolute right-0 mr-5 !text-3xl cursor-pointer" onClick={() => setIsModalVisible(false)} />
                         </div>
                     </div>
-                    <div className="flex flex-wrap justify-center items-center w-full h-dvh">
+                    <div className="flex flex-wrap justify-center items-center w-full h-dvh overflow-scroll">
                         {
                             icons?.map((item, i) => {
                                 return (
@@ -101,7 +101,6 @@ let styles = {
         flexDirection: "column",
         width: "90%",
         height: "90%",
-        overflow: "scroll",
         borderRadius: "5px",
         padding: "10px 0",
         zIndex: 3,
