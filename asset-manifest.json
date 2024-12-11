@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.ef012969.css",
-    "main.js": "/static/js/main.4d46bdd5.js",
+    "main.js": "/static/js/main.25c96436.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Bike-Share-App.png": "/static/media/Bike-Share-App.2b227b621768e97ee7e6.png",
     "static/media/My-Library.png": "/static/media/My-Library.c480a355949ce103ff4d.png",
+    "static/media/Guest-Tracker.png": "/static/media/Guest-Tracker.7adfd9ea9f533fbb797c.png",
     "static/media/crimson-text-latin-400-normal.woff2": "/static/media/crimson-text-latin-400-normal.f002dfeee9542c98fae3.woff2",
     "static/media/julius-sans-one-latin-400.woff": "/static/media/julius-sans-one-latin-400.940482c0c407795ac505.woff",
     "static/media/crimson-text-latin-400-normal.woff": "/static/media/crimson-text-latin-400-normal.3bacc6d0e498efd80120.woff",
@@ -59,11 +60,11 @@
     "static/media/npmicon.svg": "/static/media/npmicon.5a2b4482be456427dcf574105ddfc058.svg",
     "static/media/axiosicon.svg": "/static/media/axiosicon.59e65910cd91434b5b5ba3e3466513f2.svg",
     "main.ef012969.css.map": "/static/css/main.ef012969.css.map",
-    "main.4d46bdd5.js.map": "/static/js/main.4d46bdd5.js.map",
+    "main.25c96436.js.map": "/static/js/main.25c96436.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef012969.css",
-    "static/js/main.4d46bdd5.js"
+    "static/js/main.25c96436.js"
   ]
 }
