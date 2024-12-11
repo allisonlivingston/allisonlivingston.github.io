@@ -7,11 +7,11 @@ const ProjectModal = ({ data, setIsModalVisible, setSelectedProject }) => {
             <>
                 <div style={styles.modalOverlay} onClick={() => { setIsModalVisible(false); setSelectedProject({}); }}></div>
                 <div className="bg-white" style={styles.modalContent}>
-                    <div>
-                        <h3 className="w-full absolute top-0 left-0 text-2xl mt-8 uppercase tracking-widest" style={{ fontFamily: "Archivo Narrow" }}>{data.name}</h3>
-                        <CloseIcon className="absolute right-0 top-0 mr-5 mt-8 !text-3xl cursor-pointer" onClick={() => setIsModalVisible(false)} />
+                    <div className="flex w-4/5">
+                        <h3 className="w-full text-2xl uppercase tracking-widest" style={{ fontFamily: "Archivo Narrow" }}>{data.name}</h3>
+                        <CloseIcon className="!text-3xl cursor-pointer" onClick={() => setIsModalVisible(false)} />
                     </div>
-                    <div className="bg-white w-4/5 h-3/4 flex flex-col justify-evenly items-center mt-8">
+                    <div className="bg-white w-4/5 h-3/4 flex flex-col justify-evenly items-center mt-6">
                         <div className="w-full flex flex-col sm:flex-row justify-center items-center">
                             <img className="w-60 sm:w-64 md:w-72 lg:w-80 shadow-[0px_0px_6px_0px_#6A6A6A] rounded" src={data.img} />
                             <div className="flex flex-row sm:flex-col sm:ml-4 md:ml-10 mt-5 sm:mt-0">
@@ -66,13 +66,14 @@ let styles = {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        width: "75%",
-        height: "75%",
+        width: "85%",
+        height: "80%",
         overflow: "scroll",
         borderRadius: "5px",
         zIndex: 3,
         border: "solid black 2px",
-        maxWidth: "700px"
+        maxWidth: "700px",
+        padding: "20px"
     }
   }
 

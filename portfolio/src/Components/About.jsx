@@ -20,7 +20,7 @@ const About = ({ setIsModalVisible }) => {
                     <p className="w-4/5">{aboutInfo}</p>
                 </section>
                 <section className="w-full md:w-1/2 flex flex-col justify-center items-center mt-6 md:mt-0">
-                    <h2 className="font-bold tracking-widest text-base sm:text-lg m-0" style={{ fontFamily: "Archivo Narrow" }}>SKILLS + TOOLS</h2>
+                    <h2 className="font-bold tracking-widest text-lg m-0" style={{ fontFamily: "Archivo Narrow" }}>SKILLS + TOOLS</h2>
                     <div className="flex flex-col mt-4 mb-4">
                         <div style={{ display: "flex", width: "auto" }}>
                             <img className="skillIcon m-1" src={ReactIcon} />
