@@ -1,0 +1,138 @@
+[
+    {
+        "name": "React",
+        "alt": "React Logo"
+    },
+    {
+        "name": "JavaScript",
+        "alt": "JavaScript Logo"
+    },
+    {
+        "name": "HTML",
+        "alt": "HTML Logo"
+    },
+    {
+        "name": "CSS",
+        "alt": "CSS Logo"
+    },
+    {
+        "name": "JSON",
+        "alt": "JSON Logo"
+    },
+    {
+        "name": "NodeJS",
+        "alt": "NodeJS Logo"
+    },
+    {
+        "name": "Redux",
+        "alt": "Redux Logo"
+    },
+    {
+        "name": "NPM",
+        "alt": "NPM Logo"
+    },
+    {
+        "name": "Material UI",
+        "alt": "MUI Logo"
+    },
+    {
+        "name": "Adobe Xd",
+        "alt": "Xd Logo"
+    },
+    {
+        "name": "Figma",
+        "alt": "Figma Logo"
+    },
+    {
+        "name": "Axios",
+        "alt": "Axios Logo"
+    },
+    {
+        "name": "Bitbucket",
+        "alt": "Bitbucket Logo"
+    },
+    {
+        "name": "Cypress",
+        "alt": "Cypress Logo"
+    },
+    {
+        "name": "Express",
+        "alt": "Express Logo"
+    },
+    {
+        "name": "Git",
+        "alt": "Git Logo"
+    },
+    {
+        "name": "Heroku",
+        "alt": "Heroku Logo"
+    },
+    {
+        "name": "Homebrew",
+        "alt": "Homebrew Logo"
+    },
+    {
+        "name": "Jest",
+        "alt": "Jest Logo"
+    },
+    {
+        "name": "Jira",
+        "alt": "Jira Logo"
+    },
+    {
+        "name": "jQuery",
+        "alt": "jQuery Logo"
+    },
+    {
+        "name": "PostgreSQL",
+        "alt": "PostgreSQL Logo"
+    },
+    {
+        "name": "Postman",
+        "alt": "Postman Logo"
+    },
+    {
+        "name": "React Nav",
+        "alt": "React Nav Logo"
+    },
+    {
+        "name": "Sass",
+        "alt": "Sass Logo"
+    },
+    {
+        "name": "React Router",
+        "alt": "React Router Logo"
+    },
+    {
+        "name": "Slack",
+        "alt": "Slack Logo"
+    },
+    {
+        "name": "Sourcetree",
+        "alt": "Sourcetree Logo"
+    },
+    {
+        "name": "Storybook",
+        "alt": "Storybook Logo"
+    },
+    {
+        "name": "Tailwind CSS",
+        "alt": "Tailwind CSS Logo"
+    },
+    {
+        "name": "TypeScript",
+        "alt": "TypeScript Logo"
+    },
+    {
+        "name": "Visual Studio Code",
+        "alt": "VSCode Logo"
+    },
+    {
+        "name": "Vue",
+        "alt": "Vue Logo"
+    },
+    {
+        "name": "XCode",
+        "alt": "XCode Logo"
+    }
+]

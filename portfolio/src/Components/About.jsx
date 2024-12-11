@@ -20,20 +20,20 @@ const About = ({ setIsModalVisible }) => {
                     <p className="w-4/5">{aboutInfo}</p>
                 </section>
                 <section className="w-full md:w-1/2 flex flex-col justify-center items-center mt-6 md:mt-0">
-                    <h2 className="font-bold tracking-widest text-base sm:text-lg mb-2" style={{ fontFamily: "Archivo Narrow" }}>SKILLS</h2>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <div style={{ display: "flex" }}>
-                            <img className="skillIcon" src={ReactIcon} />
-                            <img className="skillIcon" src={JavaScriptIcon} />
-                            <img className="skillIcon" src={HtmlIcon} />
+                    <h2 className="font-bold tracking-widest text-base sm:text-lg m-0" style={{ fontFamily: "Archivo Narrow" }}>SKILLS + TOOLS</h2>
+                    <div className="flex flex-col mt-4 mb-4">
+                        <div style={{ display: "flex", width: "auto" }}>
+                            <img className="skillIcon m-1" src={ReactIcon} />
+                            <img className="skillIcon m-1" src={JavaScriptIcon} />
+                            <img className="skillIcon m-1" src={HtmlIcon} />
                         </div>
-                        <div style={{ display: "flex" }}>
-                            <img className="skillIcon" src={CssIcon} />
-                            <img className="skillIcon" src={JsonIcon} />
-                            <img className="skillIcon" src={NodeIcon} />
+                        <div style={{ display: "flex", width: "auto" }}>
+                            <img className="skillIcon m-1" src={CssIcon} />
+                            <img className="skillIcon m-1" src={JsonIcon} />
+                            <img className="skillIcon m-1" src={NodeIcon} />
                         </div>
                     </div>
-                    <button className="text-base tracking-widest mt-4 sm:mt-2 bg-white hover:bg-purple-400 p-4 leading-4 font-bold cursor-pointer border-solid border-black border-2 rounded" style={{  fontFamily: "Archivo Narrow" }} onClick={() => setIsModalVisible(true)}>VIEW ALL</button>
+                    <button className="text-base tracking-widest m-0 bg-white hover:bg-purple-400 p-4 leading-4 font-bold cursor-pointer border-solid border-black border-2 rounded" style={{  fontFamily: "Archivo Narrow" }} onClick={() => setIsModalVisible(true)}>VIEW ALL</button>
                 </section>
             </div>
         </div>

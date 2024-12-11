@@ -35,10 +35,12 @@ import VueIcon from "../images/SkillsIcons/vueicon.svg";
 import XcodeIcon from "../images/SkillsIcons/xcodeicon.svg";
 import CloseIcon from "@mui/icons-material/Close";
 import Loader from "./Loader";
+import SkillsList from "../Data/SkillsList.json";
 
 const SkillsModal = ({ setIsModalVisible }) => {
     const [isLoading, setIsLoading] = useState(true);
     const icons = [ReactIcon, JavaScriptIcon, HtmlIcon, CssIcon, JsonIcon, NodeIcon, ReduxIcon, NpmIcon, MuiIcon, XdIcon, FigmaIcon, AxiosIcon, BitbucketIcon, CypressIcon, ExpressIcon, GitIcon, HerokuIcon, HomebrewIcon, JestIcon, JiraIcon, JqueryIcon, PostgresqlIcon, PostmanIcon, ReactNavIcon, SassIcon, ReactRouterIcon, SlackIcon, SourcetreeIcon, StorybookIcon, TailwindIcon, TypeScriptIcon, VscodeIcon, VueIcon, XcodeIcon];
+    const skillsList = SkillsList;
 
     const onLoad = (index) => {
         if(index === icons.length - 1) {
@@ -52,7 +54,7 @@ const SkillsModal = ({ setIsModalVisible }) => {
                 <div style={styles.modalOverlay} onClick={() => setIsModalVisible(false)}></div>
                 <div style={styles.modalContent}>
                     <div className="w-full flex relative py-4">
-                        <h2 className="w-full tracking-widest text-xl font-bold" style={{ fontFamily: "Archivo Narrow" }}>SKILLS</h2>
+                        <h2 className="w-full tracking-widest text-xl font-bold" style={{ fontFamily: "Archivo Narrow" }}>SKILLS + TOOLS</h2>
                         <div>
                             <CloseIcon className="absolute right-0 mr-5 !text-3xl cursor-pointer" onClick={() => setIsModalVisible(false)} />
                         </div>
@@ -61,7 +63,10 @@ const SkillsModal = ({ setIsModalVisible }) => {
                         {
                             icons?.map((item, i) => {
                                 return (
-                                    <img key={i} className="skillIcon h-28" src={item} onLoad={() => onLoad(i)} style={{ display: isLoading ? "none" : "flex" }} />
+                                    <div style={{ display: isLoading ? "none" : "flex", justifyContent: "center", alignItems: "center", padding: "5px", position: "relative" }}>
+                                        <img key={`skill-icon-${i}`} className="skillIcon h-28 hover:opacity-10 z-10" src={item} alt={skillsList[i].alt} onLoad={() => onLoad(i)} style={{ display: "flex" }} />
+                                        <p className="text-sm sm:text-md w-[80px] sm:w-[90px]" style={styles.skillText}>{skillsList[i].name}</p>
+                                    </div>
                                 )
                             })
                         }
@@ -107,6 +112,10 @@ let styles = {
         backgroundColor: "white",
         border: "solid black 2px",
         maxWidth: "700px"
+    },
+    skillText: {
+        position: "absolute",
+        fontWeight: "bold"
     }
   }
 
