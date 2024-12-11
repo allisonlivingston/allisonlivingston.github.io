@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LibraryImg from "../images/ProjectScreenshots/My-Library.png";
 import PixelArt from "../images/ProjectScreenshots/Pixel-Art.png";
 import BikeImg from "../images/ProjectScreenshots/Bike-Share-App.png";
+import TrackerImg from "../images/ProjectScreenshots/Guest-Tracker.png";
 
 const Projects = ({ handleSelectedProject }) => {
     const projectData = [
@@ -28,6 +29,14 @@ const Projects = ({ handleSelectedProject }) => {
             tech: ["JavaScript", "HTML", "CSS", "Cypress", "Firebase"],
             href: "https://project-2-bike-share.firebaseapp.com/",
             github: "https://github.com/allisonlivingston/Bike-Share-App"
+        },
+        {
+            name: "Guest Tracker",
+            img: TrackerImg,
+            alt: "guest tracker project",
+            tech: ["Vue", "TypeScript", "HTML", "Tailwind CSS", "Firebase"],
+            href: "https://guest-tracker-762c2.firebaseapp.com/",
+            github: "https://github.com/allisonlivingston/GuestTracker/"
         }
     ];
 

@@ -9,7 +9,7 @@ const ProjectModal = ({ data, setIsModalVisible, setSelectedProject }) => {
                 <div className="bg-white" style={styles.modalContent}>
                     <div>
                         <h3 className="w-full absolute top-0 left-0 text-2xl mt-8 uppercase tracking-widest" style={{ fontFamily: "Archivo Narrow" }}>{data.name}</h3>
-                        <CloseIcon className="absolute right-0 top-0 mr-5 mt-8 !text-3xl" onClick={() => setIsModalVisible(false)} />
+                        <CloseIcon className="absolute right-0 top-0 mr-5 mt-8 !text-3xl cursor-pointer" onClick={() => setIsModalVisible(false)} />
                     </div>
                     <div className="bg-white w-4/5 h-3/4 flex flex-col justify-evenly items-center mt-8">
                         <div className="w-full flex flex-col sm:flex-row justify-center items-center">
